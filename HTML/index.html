@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../CSS/index.css">
     <title> LS. </title>
     <link rel="icon" type="image/png" href="../IMG/LS-32x32.png" sizes="32x32">
@@ -14,78 +17,130 @@
 
 <body>
 
-    <header>
+  <header>
         <ul>
-            <li> <a href="../HTML/index.html"> <img src="../IMG/LS.JPEG" alt="LS-logo" width="50px" height="50px"> </a> </li>
+            <li> <a href="../HTML/index.html"> <img src="../IMG/LS.JPEG" id="LS-logo" width="50px" height="50px"> </a> </li>
             <li> <a href="../HTML/index.html"> Home. </a> </li>
             <li> <a href="../HTML/detail.html"> Genres. </a> </li>
             <li> <a href="../HTML/playlist.html"> Playlists. </a> </li>
         </ul>
-    </header>
+  </header>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
-    <div class="cont">
+  <div class="cont">
 
-        <div class="main">
-            <div class="tracks">
-                <div>
-                    <h1> <a href="../HTML/detail.html"> Tracks. </a> </h1>
+    <div class="main">
+
+      <div class="artists">
+        <h1> <a href="../HTML/detail.html"> Artists. </a> </h1>
+              
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+    
+          <!-- Slides -->
+          <div class="carousel-inner">
+              
+            <div class="item active">
+              <a href="../HTML/detail.html">
+                <img src="../IMG/brysontiller.jpg">
+                <div class="carousel-caption">
+                  <p> Bryson Tiller </p>
                 </div>
+              </a>
+            </div>
+              
+            <div class="item">
+              <a href="../HTML/detail.html">
+                <img src="../IMG/theweeknd.jpg">
+                <div class="carousel-caption">
+                  <p> The Weeknd </p>
+                </div>
+              </a>
             </div>
 
-            <div class="albums">
-                <div>
-                    <h2> <a href="../HTML/detail.html"> Albums. </a> </h1>
+            <div class="item">
+              <a href="../HTML/detail.html">
+                <img src="../IMG/torylanez.jpg">
+                <div class="carousel-caption">
+                  <p> Tory Lanez </p>
                 </div>
+              </a>
             </div>
-
-            <div class="artists">
-                <div>
-                    <h3> <a href="../HTML/detail.html"> Artists. </a> </h1>
-                </div>
-            </div>
+                
+          </div>
+                  
+          <!-- Controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev" id="controls">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next" id="controls">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    
         </div>
-
-        <div class="side">
-            <div class="playlists">
-                <div>
-                    <div class="grid-container">
-                        <div class="grid-item">
-                        <img src="../IMG/playlist.png" alt="">
-                        </div>
-                        <div class="grid-item">
-                        <img src="../IMG/playlist.png" alt="">
-                        </div>
-                        <div class="grid-item">
-                        <img src="../IMG/playlist.png" alt="">
-                        </div>
-                        <div class="grid-item">
-                        <img src="../IMG/playlist.png" alt="">
-                        </div>
-                        <div class="grid-item">
-                        <img src="../IMG/playlist.png" alt="">
-                        </div>
-                    </div>
-                        <!-- <h1> <a href="../HTML/playlist.html"> Playlists. </a> </h1> -->
-                </div>
-            </div>
+      </div>
+    
+      <div class="albums">
+        <div>
+          <h2> <a href="../HTML/detail.html"> Albums. </a> </h2>
         </div>
+      </div>
+    
+      <div class="tracks">
+        <div>
+          <h3> <a href="../HTML/detail.html"> Tracks. </a> </h3>
+        </div>
+      </div>
 
     </div>
 
-    <a href="https://www.deezer.com/es/" class="icon"> <img src="../IMG/deezer logo.png" alt="deezer" id="deezer-logo-small"> </a>
+    <div class="side">
+      <div class="playlists">
 
-    <footer>
+        <div>
+          <div class="grid-item">
+            <img src="../IMG/playlist.png" alt="">
+          </div>
+          <div class="grid-item">
+            <img src="../IMG/playlist.png" alt="">
+          </div>
+          <div class="grid-item">
+            <img src="../IMG/playlist.png" alt="">
+          </div>
+          <div class="grid-item">
+            <img src="../IMG/playlist.png" alt="">
+          </div>
+          <div class="grid-item">
+            <img src="../IMG/playlist.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <a href="https://www.deezer.com/es/" class="icon"> <img src="../IMG/deezer logo.png" alt="deezer" id="deezer-logo-small"> </a>
+
+  <footer>
         <p> Valentina Quirno </p>
         <p> Lorenzo Pasqualini </p>
         <a href="https://www.deezer.com/es/"> <img src="../IMG/deezer.png" alt="Deezer Logo" id="deezer-logo"> </a>
-    </footer>
+  </footer>
 
 </body>
 

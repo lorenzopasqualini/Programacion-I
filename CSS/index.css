@@ -1,10 +1,10 @@
 body
 {
     background-image: url(../IMG/fondo.png);
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -23,34 +23,42 @@ body
     gap: 10px;
 }
 
-.tracks
+.artists
 {
-    background-color: rgb(255, 185, 159, 0.6);
+    background-color: rgb(160, 255, 168, 0.6);
     text-align: center;
+}
+
+.carousel-inner img
+{
+    border-radius: 500px;
     width: 100%;
-    display: grid;
-    align-content: center;
+    height: auto;
+}
+#controls
+{
+    background-image: none;
 }
 
 .albums
 {
     background-color: rgb(160, 160, 255, 0.6);
     text-align: center;
-    width: 100%;
+
     display: grid;
     align-content: center;
 }
 
-.artists
+.tracks
 {
-    background-color: rgb(160, 255, 168, 0.6);
+    background-color: rgb(255, 185, 159, 0.6);
     text-align: center;
-    width: 100%;
+
     display: grid;
     align-content: center;
 }
 
-.playlists
+.side
 {
     background-color: rgb(255, 253, 160, 0.6);
     text-align: center;
@@ -62,9 +70,14 @@ body
 
 a
 {
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
     font-weight: bold;
+}
+
+h1, h2, h3
+{
+    margin: 25px;
 }
 
 header ul
@@ -92,6 +105,7 @@ footer
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
+    padding: 25px;
     font-weight: normal;
 }
 
@@ -114,15 +128,9 @@ footer
     height: 25px;
 }
 
-.grid-item {
-  font-size: 30px;
-  text-align: center;
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  /* padding: 20px; */
-}
-
-.grid-item > img {
-  width: 400px!important;
+.grid-item > img
+{
+  width: 100%;
 }
 
 /* Versión Tablet */
