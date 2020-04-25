@@ -12,7 +12,7 @@ body
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 25px 200px;
+    margin: 25px 100px;
     gap: 10px;
 }
 
@@ -50,8 +50,8 @@ body
 
 .albums img
 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 
 .tracks
@@ -65,8 +65,8 @@ body
 
 .tracks img
 {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 }
 
 .side
