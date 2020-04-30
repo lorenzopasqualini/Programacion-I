@@ -164,11 +164,32 @@ footer
 /* Versión Tablet */
 @media (max-width: 768px)
 {
+    #deezer-logo-small
+    {
+        display: none;
+    }
 
+    .cont
+    {
+        margin: 25px 0px;
+    }
+
+    footer
+    {
+        width: 880px;
+    }
 }
 
 /* Versión Mobile */
 @media (max-width: 320px)
 {
+    #deezer-logo-small
+    {
+        display: none;
+    }
 
+    .cont
+    {
+        margin: 25px 0px;
+    }
 }
