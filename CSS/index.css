@@ -1,6 +1,6 @@
 body
 {
-    background-image: url(../IMG/fondo.png);
+    background-image: url(../img/fondo.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -90,7 +90,7 @@ body
 
 .genre-item
 {
-    background-image: url(../IMG/fondo.png);
+    background-image: url(img/fondo.png);
     background-size: cover;
     border-radius: 100px;
     padding: 50px;
