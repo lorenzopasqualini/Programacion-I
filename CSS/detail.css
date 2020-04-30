@@ -145,3 +145,39 @@ height: 50px;
 font-family: 'Suranna', serif;
 font-size: 34px;
 }
+
+
+.album-1, .album-2, .album-3 {
+background-color: #ffffff;
+padding: 10px;
+border-radius: 10px;
+margin-top: 20px;
+margin-bottom: 5px;
+}
+
+.album-name {
+margin-left: 50px;
+}
+
+.album-name h4 {
+font-size: 13px;
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+}
+
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+border: none;
+}
+
+th, td {
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
