@@ -12,9 +12,8 @@ body
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin:25px 100px;
     gap: 10px;
-    padding: 125px 0 0 0;
+    margin: 0px 100px;
 }
 
 .main
@@ -22,6 +21,7 @@ body
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    margin: 120px 0px 10px 0px;
 }
 
 .artists
@@ -75,6 +75,7 @@ body
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+    margin: 120px 0px 10px 0px;
 }
 
 .playlists
@@ -90,7 +91,7 @@ body
 
 .genre-item
 {
-    background-image: url(img/fondo.png);
+    background-image: url(../IMG/fondo.png);
     background-size: cover;
     border-radius: 100px;
     padding: 50px;
@@ -123,7 +124,7 @@ header ul
     justify-content: space-evenly;
     align-items: center;
     border-radius: 100px;
-    margin: 10px 0px;
+    margin-top: 10px;
 }
 
 footer
@@ -172,7 +173,7 @@ footer
 
     .cont
     {
-        margin: 25px 0px;
+        margin: 0px;
     }
 
     footer
@@ -191,6 +192,6 @@ footer
 
     .cont
     {
-        margin: 25px 0px;
+        margin: 0px;
     }
 }
