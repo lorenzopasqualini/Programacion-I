@@ -13,7 +13,7 @@ body
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    margin: 0px 100px;
+    margin: 120px 100px 10px 100px;
 }
 
 .main
@@ -21,7 +21,6 @@ body
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    margin: 120px 0px 10px 0px;
 }
 
 .artists
@@ -32,8 +31,7 @@ body
 .carousel-inner img
 {
     border-radius: 500px;
-    width: 100%;
-    height: auto;
+    size: auto;
 }
 #controls
 {
@@ -75,13 +73,17 @@ body
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    margin: 120px 0px 10px 0px;
 }
 
 .playlists
 {
     background-color: rgb(255, 253, 160, 0.6);
     align-content: flex-start;
+}
+
+.grid-item img
+{
+  width: 100%;
 }
 
 #genres
@@ -116,6 +118,7 @@ header ul
     background-color: rgba(0, 0, 0, 0.2);
     padding: 25px;
     position: fixed;
+    top: 0;
     width: 100%;
     list-style-type: none;
     text-align: justify;
@@ -125,6 +128,7 @@ header ul
     align-items: center;
     border-radius: 100px;
     margin-top: 10px;
+    z-index: 1;
 }
 
 footer
@@ -158,11 +162,6 @@ footer
     height: 20px;
 }
 
-.grid-item > img
-{
-  width: 100%;
-}
-
 /* Versión Tablet */
 @media (max-width: 768px)
 {
@@ -173,7 +172,8 @@ footer
 
     .cont
     {
-        margin: 0px;
+        grid-template-columns: 1fr;
+        margin-left: 140px;
     }
 
     footer
@@ -192,6 +192,7 @@ footer
 
     .cont
     {
-        margin: 0px;
+        grid-template-columns: 1fr;
+        margin-left: 140px;
     }
 }

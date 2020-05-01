@@ -7,3 +7,39 @@ body
     background-position: center;
     font-family: 'Raleway', sans-serif;
 }
+
+.cont-playlist
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0px 100px;
+}
+
+.playlist-own
+{
+    background-color: rgba(0, 207, 155, 0.4);
+    height: 1000px;
+}
+
+.playlist-deezer
+{
+    background-color: rgba(204, 0, 61, 0.6);
+}
+
+.grid-item img
+{
+  width: 100%;
+}
+
+h1, h2, h3
+{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+a
+{
+    text-decoration: none;
+}
