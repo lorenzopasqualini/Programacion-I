@@ -93,11 +93,39 @@ body
 
 .genre-item
 {
-    background-image: url(../IMG/fondo.png);
-    background-size: cover;
     border-radius: 100px;
     padding: 50px;
     margin: 25px;
+}
+
+#genre-rap
+{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/b8ae8f0791f5e9e6c7a11bab94b0cbad/134x264-000000-80-0-0.jpg);
+    background-size: cover;
+}
+
+#genre-rnb
+{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/1c282e04053a2d1ee0ffa638bff4cb9b/134x264-000000-80-0-0.jpg);
+    background-size: cover;
+}
+
+#genre-pop
+{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/2b15578cf12902c0c7d2ae07e8071460/134x264-000000-80-0-0.jpg);
+    background-size: cover;
+}
+
+#genre-rock
+{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/8ad3050b34360d0573d9d7b8bf38997d/134x264-000000-80-0-0.jpg);
+    background-size: cover;
+}
+
+#genre-indie
+{
+    background-image: url(https://e-cdns-images.dzcdn.net/images/misc/3afdfc1cfa772d31a5ca70a121d10206/134x264-000000-80-0-0.jpg);
+    background-size: cover;
 }
 
 a
