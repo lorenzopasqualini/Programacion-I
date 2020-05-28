@@ -1,9 +1,187 @@
 body
 {
-    background-image: url(../IMG/fondo.png);
+    background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     font-family: 'Raleway', sans-serif;
+} 
+
+.artist-description {
+	background-color: blue;
+	border-radius: 10px;
 }
+.picture-artist {
+	padding: 20px; /* Todos tendran el mismo valor */
+	/*margin: 20px 20px; */ /* El primero para arriba y abajo, el segundo para derecha e izquierda */
+	/*margin: 20px 20px 20px 20px; */	 /* El primero arriba, segundo derecha, tercero abajo y quarto izquierda */
+}
+.picture-artist img {
+	border-radius:100%; width:200px;
+}
+
+.socialartist {
+	font-size: 1.2em;
+}
+.socialartist i {
+	margin: 10px 5px;
+}
+.fa-twitter {
+	color:#00acee;
+}
+.fa-facebook {
+	color:#3b5998;
+}
+.instagram {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 1px;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 20px;
+  vertical-align: middle;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.grid-container {
+	display: grid;
+}
+
+/*  NUEVO  */
+.wrapper {
+height: 225px;
+/*margin: 50px auto;*/
+margin: 120px 100px 10px 100px;
+border-radius: 7px 7px 7px 7px;
+/* VIA CSS MATIC https://goo.gl/cIbnS */
+-webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.album {
+  margin: 120px 100px 10px 100px;
+}
+
+.artist-img {
+float: left;
+/*height: 420px;*/
+width: 220px;
+border-radius: 10px 0 0 10px;
+padding: 10px;
+background-color: red;
+}
+
+.artist-img img {
+border-radius: 100%;
+width: 90%;
+}
+
+.artist-info {
+float: left;
+width: 806px;
+border-radius: 0 10px 10px 0;
+background-color: #ffffff;
+}
+
+.artist-text {
+width: 327px;
+}
+
+.artist-text h2 {
+margin: 0 0 0 38px;
+font-size: 34px;
+color: #474747;
+
+}
+
+.artist-text h2,
+.artist-price-btn p {
+font-family: 'Raleway', sans-serif;
+}
+
+.artist-text h3 {
+margin: 0 0 0 38px;
+font-size: 13px;
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+color: #d2d2d2;
+letter-spacing: 0.2em;
+}
+
+.artist-text p {
+height: 115px;
+margin: 0 0 0 38px;
+font-family: 'Raleway', sans-serif;
+color: #8d8d8d;
+line-height: 1.7em;
+font-size: 15px;
+font-weight: lighter;
+overflow: hidden;
+}
+
+.socialartist {
+width: 327px;
+margin: 17px 0 0 38px;
+position: relative;
+}
+
+.socialartist p {
+display: inline-block;
+position: absolute;
+top: -13px;
+height: 50px;
+font-family: 'Trocchi', serif;
+margin: 0 0 0 38px;
+font-size: 28px;
+font-weight: lighter;
+color: #474747;
+}
+
+span {
+display: inline-block;
+height: 50px;
+font-family: 'Suranna', serif;
+font-size: 34px;
+}
+
+
+.album-1, .album-2, .album-3 {
+background-color: #ffffff;
+padding: 10px;
+border-radius: 10px;
+margin-top: 20px;
+margin-bottom: 5px;
+}
+
+.album-name {
+margin-left: 50px;
+}
+
+.album-name h4 {
+font-size: 13px;
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+}
+
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%;
+border: none;
+}
+
+th, td {
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
