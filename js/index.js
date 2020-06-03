@@ -10,8 +10,8 @@ console.log(data)
     let contArtist = document.querySelector(".carousel-inner");
     for (const oneArtist of allArtists) {
     contArtist.innerHTML +=
-        `<div class="item active">
-            <a href="">
+        `<div>
+            <a href= “detail.html?id=${oneArtist.id}”>
                 <img src="${oneArtist.picture_big}" alt="Deezer Artist">
                 <div class="carousel-caption">
                     <p> ${oneArtist.name} </p>
@@ -25,7 +25,7 @@ console.log(data)
     for (const oneAlbum of allAlbums) {
         contAlbum.innerHTML +=
             `<div>
-                <a href=""> <img src="${oneAlbum.cover_medium}" alt="Deezer Album"> </a>
+                <a href= “detail.html?id=${oneAlbum.id}”> <img src="${oneAlbum.cover_big}" alt="Deezer Album"> </a>
             </div>`
     }
 
@@ -33,9 +33,24 @@ console.log(data)
     let contTracks = document.querySelector(".tracks");
     for (const oneTrack of allTracks) {
         contTracks.innerHTML +=
+        `<div>
+            <a href= “detail.html?id=${oneTrack.id}”>
+                <img src="${oneTrack.album.cover_big}" alt="Deezer Album">
+            </a>
+        </div>`
+    }
+
+    let allPlaylists = data.playlists.data;
+    let contPlaylists = document.querySelector(".playlists")
+    for (const onePlaylist of allPlaylists) {
+        contPlaylists.innerHTML +=
             `<div>
-                <a href=""> <p> ${oneTrack.title}</p> </a>
-            </div>`                  
+                <a href= “playlist.html?id=${onePlaylist.id}”>
+                    <div class="grid-item">
+                        <img src="${onePlaylist.picture_big}" alt="Deezer Playlist">
+                    </div>
+                </a>
+            </div>`
     }
 
 })
