@@ -131,12 +131,14 @@ body
 a
 {
     color: white !important;
-    text-decoration: none !important;
     font-weight: bold;
+    text-decoration: none !important;
 }
 
 h1, h2, h3, h4, h5
 {
+    color: white;
+    font-weight: bold;
     margin: 25px;
     text-align: center;
 }
@@ -160,7 +162,7 @@ header ul
 }
 
 header ul li {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 header ul li a:hover {
     color: #000!important;

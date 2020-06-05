@@ -14,22 +14,11 @@ body
 
 .cont-playlist
 {
+    background-color: rgba(246, 255, 125, 0.6);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin: 0px 100px;
-}
-
-
-.playlist-own
-{
-    background-color: rgba(0, 207, 155, 0.4);
-    height: 1000px;
-}
-
-.playlist-deezer
-{
-    background-color: rgba(204, 0, 61, 0.6);
 }
 
 .grid-item img
