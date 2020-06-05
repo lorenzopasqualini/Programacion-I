@@ -1,8 +1,8 @@
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/playlist")
 .then(function(res){
     return res.json();
 })
-
+/*
 .then(function(data){
 console.log(data)
 
@@ -20,3 +20,4 @@ console.log(data)
 .catch(function(error){
     console.log(error);
 })
+*/
