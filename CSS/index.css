@@ -75,7 +75,7 @@ body
     gap: 10px;
 }
 
-.playlists
+#playlists
 {
     background-color: rgb(255, 253, 160, 0.6);
     align-content: flex-start;
@@ -150,13 +150,13 @@ h1, h2, h3, h4, h5
 
 .form-space
 {
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 .form-button
 {
-    background-color: rgba(197, 97, 255, 0.6);
-    border-radius: 100px;
+    background-color: rgb(160, 160, 255, 0.6);
+    border-radius: 25px;
     font-weight: lighter;
     font-size: smaller;
     color: white;
@@ -181,11 +181,7 @@ header ul
 }
 
 header ul li {
-    font-size: 1.2em;
-}
-header ul li a:hover {
-    color: #000!important;
-    font-weight: 800!important;
+    font-size: 16px;
 }
 
 footer
@@ -199,14 +195,22 @@ footer
     padding: 25px;
 }
 
-.icon
+.sideDeezer
 {
     position: fixed;
     margin: 0px 25px;
     top: 150px;
 }
 
-#deezer-logo-small
+.sideGit
+{
+    position: fixed;
+    margin: 0px 25px;
+    top: 200px;
+    font-size: 50px;
+}
+
+#sideDeezer-img
 {
     width: 50px;
     height: 50px;
@@ -251,6 +255,11 @@ footer
     {
         grid-template-columns: 1fr;
         margin-left: 140px;
+    }
+
+    header
+    {
+        display: auto;
     }
 }
 

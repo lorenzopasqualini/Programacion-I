@@ -68,7 +68,7 @@ console.log(data)
     }
 
     let allPlaylists = data.playlists.data;
-    let contPlaylists = document.querySelector(".playlists");
+    let contPlaylists = document.querySelector("#playlists");
     var contadorPlaylist = 0;
     for (const onePlaylist of allPlaylists) {
         contadorPlaylist++;

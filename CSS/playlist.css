@@ -8,32 +8,43 @@ body
     font-family: 'Raleway', sans-serif;
 }
 
-.playlist {
+.contPlaylist {
     margin: 120px 100px 10px 100px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.cont-playlist
+.myPlaylist
 {
-    background-color: rgba(246, 255, 125, 0.6);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin: 0px 100px;
-}
-
-.grid-item img
-{
-  width: 100%;
-}
-
-h1, h2, h3
-{
-    color: white;
+    background-color: rgba(255, 57, 255, 0.4);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
     text-align: center;
+    color: white;
     font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    width: 512px;
 }
 
-a
+.eachPlaylist
 {
-    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    width: 512px;
+}
+
+p
+{
+    margin: 5px;
 }

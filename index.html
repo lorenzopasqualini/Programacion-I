@@ -19,11 +19,11 @@
         <li> <a href="index.html"> <img src="img/LS.jpg" id="LS-logo" width="50px" height="50px"> </a> </li>
         <li> <a href="index.html"> Home. </a> </li>
         <li> <a href="#genres"> Genres. </a> </li>
-        <li> <a href="playlist.html"> Playlists. </a> </li>
+        <li> <a href="#playlists"> Playlists. </a> </li>
         <li>
-          <form action="index.html" method="GET" class="forms">
-            <input type="text" class="form-space" name="buscar">
-            <button type="submit" class="form-button"> Search. </button>
+          <form action="search.html" method="GET" class="forms">
+            <input type="text" class="form-space" name="search">
+            <button type="submit" class="form-button"> <i class="fas fa-search"></i> </button>
           </form>
         </li>
     </ul>
@@ -40,7 +40,6 @@
 
           <!-- Slides -->
           <div class="carousel-inner">
-
           </div>
                   
           <!-- Controls -->
@@ -69,29 +68,20 @@
 
     <div class="side">
 
-      <div class="playlists">
+      <div id="playlists">
         <h4> Playlists. </h4>
       </div>
 
       <div id="genres">
-
         <h5> Genres. </h5>
-
-        <div>
-          <a href="detail.html"> <div class="genre-item" id="genre-rap"> Rap/Hip Hop </div> </a>
-          <a href="detail.html"> <div class="genre-item" id="genre-rnb"> R&B </div> </a>
-          <a href="detail.html"> <div class="genre-item" id="genre-pop"> Pop </div> </a>
-          <a href="detail.html"> <div class="genre-item" id="genre-rock"> Rock </div> </a>
-          <a href="detail.html"> <div class="genre-item" id="genre-indie"> Indie/Alternative </div> </a>
-        </div>
-
       </div>
 
     </div>
 
   </div>
 
-  <a href="https://www.deezer.com/es/" class="icon"> <img src="img/deezer logo.png" alt="deezer" id="deezer-logo-small"> </a>
+  <a href="https://www.deezer.com/es/" class="sideDeezer"> <img src="img/deezer logo.png" alt="deezer" id="sideDeezer-img"> </a>
+  <a href="https://github.com/lorenzopasqualini/Programacion-I" class="sideGit"> <i class="fab fa-github"></i> </a>
 
   <footer>
         <p> Valentina Quirno </p>
@@ -100,6 +90,8 @@
   </footer>
 
   <script src="js/index.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/genre.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 

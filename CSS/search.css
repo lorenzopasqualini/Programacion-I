@@ -1,0 +1,108 @@
+body
+{
+    background-image: url(../img/fondo.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+header ul
+{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    border-radius: 100px;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+header ul li {
+    font-size: 16px;
+}
+
+a
+{
+    color: white !important;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.forms
+{
+    display: flex;
+}
+
+.form-space
+{
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.form-button
+{
+    background-color: rgb(160, 160, 255, 0.6);
+    border-radius: 25px;
+    font-weight: lighter;
+    font-size: smaller;
+    color: white;
+}
+
+.search
+{
+    margin: 120px 100px 10px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.results
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 15px;
+    font-weight: lighter;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#artist-img
+{
+    border-radius: 100px;
+}
+
+footer
+{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+    font-size: 15px;
+}
+
+#deezer-logo
+{
+    width: 100px;
+    height: 20px;
+}
+
+a
+{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
