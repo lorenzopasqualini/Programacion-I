@@ -16,7 +16,9 @@ body
 
 .myPlaylist
 {
-    background-color: rgba(255, 57, 255, 0.4);
+    background-image: url(../img/fondo2.png);
+    background-size: cover;
+    opacity: 1;
     display: flex;
     align-items: baseline;
     justify-content: space-around;
