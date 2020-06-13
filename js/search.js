@@ -16,6 +16,8 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=" + q
         results.innerHTML +=
             `<div class="results">
 
+                <a href="javacript:;" class="button"> <i class="fas fa-folder-plus"></i> </a>
+
                 <a href="detail.html?id=${eachResult.id}">
                     <img src="${eachResult.album.cover_medium}">
                     <p> ${eachResult.title_short} </p>

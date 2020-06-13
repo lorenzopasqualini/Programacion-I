@@ -59,7 +59,7 @@ console.log(data)
         contTracks.innerHTML +=
         `<div>
             <a href= "detail.html?id=${oneTrack.id}">
-                <img src="${oneTrack.album.cover_big}" alt="Deezer Album">
+                <img src="${oneTrack.album.cover_big}" alt="Deezer Track">
             </a>
         </div>`
         if(contadorTracks == 5){
@@ -75,7 +75,7 @@ console.log(data)
         contPlaylists.innerHTML +=
             `<div>
                 <a href= "playlist.html?id=${onePlaylist.id}">
-                    <div class="grid-item">
+                    <div>
                         <img src="${onePlaylist.picture_big}" alt="Deezer Playlist">
                     </div>
                 </a>

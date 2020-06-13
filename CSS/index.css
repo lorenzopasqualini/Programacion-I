@@ -25,7 +25,7 @@ body
 
 .artists
 {
-    background-color: rgb(160, 255, 168, 0.6);
+    background-color: rgba(160, 255, 168, 0.6);
 }
 
 .carousel-inner img
@@ -40,29 +40,23 @@ body
 
 .albums
 {
-    background-color: rgb(160, 160, 255, 0.6);
+    background-color: rgba(160, 160, 255, 0.6);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 10px;
-}
-
-.albums img
-{
-    width: 300px;
-    height: 300px;
 }
 
 .tracks
 {
-    background-color: rgb(255, 185, 159, 0.6);
+    background-color: rgba(255, 185, 159, 0.6);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 10px;
 }
 
-.tracks img
+.albums img, .tracks img
 {
     width: 300px;
     height: 300px;
@@ -77,13 +71,18 @@ body
 
 #playlists
 {
-    background-color: rgb(255, 253, 160, 0.6);
+    background-color: rgba(255, 253, 160, 0.6);
     align-content: flex-start;
 }
 
-.grid-item img
+.myPlaylistIndex
 {
-  width: 100%;
+    background-color: rgba(255, 253, 160, 0.2);
+    background-size: cover;
+    border-radius: 100px;
+    padding: 50px;
+    margin: 25px;
+    text-align: center;
 }
 
 #genres
@@ -155,7 +154,7 @@ h1, h2, h3, h4, h5
 
 .form-button
 {
-    background-color: rgb(160, 160, 255, 0.6);
+    background-color: rgba(160, 160, 255, 0.6);
     border-radius: 25px;
     font-weight: lighter;
     font-size: smaller;
@@ -261,63 +260,4 @@ footer
     {
         display: auto;
     }
-}
-
-
-/* Smartphones (portrait & landscape) */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    header>ul{
-        width: auto;
-    }
-}
-/* Smartphones (landscape) */
-@media only screen 
-and (min-width : 321px) {
-}
-/* Smartphones (portrait) */
-@media only screen 
-and (max-width : 320px) {
-    #deezer-logo-small
-    {
-        display: none;
-    }
-
-    .cont
-    {
-        grid-template-columns: 1fr;
-        margin-left: 140px;
-    }
-}
-/* iPads (portrait & landscape) */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-}
-/* iPads (landscape) */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-}
-/* iPads (portrait) */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-}
-/* Ordenadores de sobremesa y portátiles */
-@media only screen 
-and (min-width : 1224px) {
-}
-/* Pantallas grandes */
-@media only screen 
-and (min-width : 1824px) {
-}
-/* iPhone 4 */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-
 }
