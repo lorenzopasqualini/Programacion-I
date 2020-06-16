@@ -69,7 +69,7 @@ box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 
 .artist-img {
 float: left;
-/*height: 420px;*/
+height: 225px;
 width: 220px;
 border-radius: 10px 0 0 10px;
 padding: 10px;
@@ -78,7 +78,7 @@ background-color: red;
 
 .artist-img img {
 border-radius: 100%;
-width: 90%;
+width: 100%;
 }
 
 .artist-info {
@@ -90,6 +90,7 @@ background-color: #ffffff;
 
 .artist-text {
 width: 327px;
+height: 208px;
 }
 
 .artist-text h2 {

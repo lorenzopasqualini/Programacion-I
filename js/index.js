@@ -14,7 +14,7 @@ console.log(data)
         if(contadorArtist == 1) {
             contArtist.innerHTML +=
             `<div class="item active">
-                <a href= "detail.html?id=${oneArtist.id}">
+                <a href= "detail.html?artistid=${oneArtist.id}">
                     <img src="${oneArtist.picture_xl}" alt="Deezer Artist">
                     <div class="carousel-caption">
                         <p> ${oneArtist.name} </p>
@@ -24,7 +24,7 @@ console.log(data)
         } else {
             contArtist.innerHTML +=
             `<div class="item">
-                <a href= "detail.html?id=${oneArtist.id}">
+                <a href= "detail.html?artistid=${oneArtist.id}">
                     <img src="${oneArtist.picture_xl}" alt="Deezer Artist">
                     <div class="carousel-caption">
                         <p> ${oneArtist.name} </p>
@@ -42,7 +42,7 @@ console.log(data)
         contadorAlbum++;
         contAlbum.innerHTML +=
             `<div>
-                <a href= "detail.html?id=${oneAlbum.id}">
+                <a href= "detail.html?albumid=${oneAlbum.id}">
                     <img src="${oneAlbum.cover_big}" alt="Deezer Album">
                 </a>
             </div>`
@@ -58,8 +58,8 @@ console.log(data)
         contadorTracks++;
         contTracks.innerHTML +=
         `<div>
-            <a href= "detail.html?id=${oneTrack.id}">
-                <img src="${oneTrack.album.cover_big}" alt="Deezer Track">
+            <a href= "detail.html?trackid=${oneTrack.id}">
+                <img src="${oneTrack.album.cover_big}" alt="Deezer Album">
             </a>
         </div>`
         if(contadorTracks == 5){
@@ -75,7 +75,7 @@ console.log(data)
         contPlaylists.innerHTML +=
             `<div>
                 <a href= "playlist.html?id=${onePlaylist.id}">
-                    <div>
+                    <div class="grid-item">
                         <img src="${onePlaylist.picture_big}" alt="Deezer Playlist">
                     </div>
                 </a>

@@ -59,11 +59,9 @@ a
 
 .search
 {
-    background-color: rgba(160, 255, 168, 0.4);
     margin: 120px 100px 10px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: 10px;
 }
 
 .results
