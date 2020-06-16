@@ -10,27 +10,37 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/playlist/" + p
 .then(function(data){
 
     let allPlaylistTracks = data.tracks.data;
-    console.log(allPlaylistTracks);
-
-    let contPlaylist = document.querySelector(".deezerPlaylist");
+    let contPlaylist = document.querySelector(".playlist");
     for (const onePlaylistTrack of allPlaylistTracks) {
-        contPlaylist.innerHTML +=
+        contPlaylist.innerHTML =
             `<div class="eachPlaylist">
-                <a href="javascript:;" class="button"> <i class="fas fa-folder-plus"></i> </a>
-                <a href="detail.html?=${onePlaylistTrack.album.id}">
-                    <div>
-                        <img src="${onePlaylistTrack.album.cover}" alt="Track">
-                        <p> ${onePlaylistTrack.title} </p>
-                    </div>
-                </a>
-                <a href="detail.html?=${onePlaylistTrack.artist.id}">
-                    <p> ${onePlaylistTrack.artist.name} </p>
-                </a>
+                <a href="javascript:;" onclick="addPlaylist"> <i class="fas fa-folder-plus"></i> </a>
+                <div>
+                    <img src="${onePlaylistTrack.album.cover}" alt="Track">
+                    <p> ${onePlaylistTrack.title} </p>
+                </div>
+                <p> ${onePlaylistTrack.artist.name} </p>
             </div>`
     }
+
+    console.log(allPlaylistTracks)
 
 })
 
 .catch(function(error){
     console.log(error);
 })
+
+function addPlaylist (track, trackId, trackCover) {
+    let localPlaylist = window.localStorage.getItem(addTrack);
+    let jsonPlaylist = JSON.parse(localPlaylist);
+
+    if(!jsonPlaylist) {
+        jsonPlaylist = [];
+    }
+
+    let trackPlaylist = {track: Track, trackId: TrackID, trackCover: TrackCover};
+    jsonPlaylist.push(trackPlaylist);
+
+    window.localStorage.setItem("addPlaylist", JSON.stringify(jsonPlaylist));
+}

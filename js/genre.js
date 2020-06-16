@@ -13,11 +13,11 @@ console.log(data)
     let indexGenre = document.querySelector("#genres");
     indexGenre.innerHTML +=
         `<div>
-            <a href="detail.html?id=116"> <div class="genre-item" id="genre-rap"> Rap/Hip Hop </div> </a>
-            <a href="detail.html?id=165"> <div class="genre-item" id="genre-rnb"> R&B </div> </a>
-            <a href="detail.html?id=132"> <div class="genre-item" id="genre-pop"> Pop </div> </a>
-            <a href="detail.html?id=152"> <div class="genre-item" id="genre-rock"> Rock </div> </a>
-            <a href="detail.html?id=85"> <div class="genre-item" id="genre-indie"> Indie/Alternative </div> </a>
+            <a href="detail.html?generoid=116"> <div class="genre-item" id="genre-rap"> Rap/Hip Hop </div> </a>
+            <a href="detail.html?generoid=165"> <div class="genre-item" id="genre-rnb"> R&B </div> </a>
+            <a href="detail.html?generoid=132"> <div class="genre-item" id="genre-pop"> Pop </div> </a>
+            <a href="detail.html?generoid=152"> <div class="genre-item" id="genre-rock"> Rock </div> </a>
+            <a href="detail.html?generoid=85"> <div class="genre-item" id="genre-indie"> Indie/Alternative </div> </a>
         </div>`
 
 })
