@@ -10,15 +10,14 @@ body
 
 .contPlaylist {
     margin: 120px 100px 10px 100px;
-    display: flex;
-    justify-content: space-around;
 }
 
 .myPlaylist
 {
     background-image: url(../img/fondo2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    opacity: 1;
     display: flex;
     align-items: baseline;
     justify-content: space-around;
@@ -27,23 +26,27 @@ body
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
-    gap: 10px;
-    width: 512px;
+    margin: 10px;
+}
+
+.deezerPlaylist
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .eachPlaylist
 {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(160, 160, 255, 0.4);
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
     color: white;
     font-weight: bold;
-    padding: 10px;
+    padding: 25px;
     border-radius: 10px;
-    gap: 10px;
-    width: 512px;
+    margin: 10px;
 }
 
 p
