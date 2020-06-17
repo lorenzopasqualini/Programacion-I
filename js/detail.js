@@ -4,6 +4,7 @@ let artistId = objetoQuery.get("artistid")
 let generoId = objetoQuery.get("generoid")
 let albumId = objetoQuery.get("albumid")
 let trackId = objetoQuery.get("trackid")
+console.clear();
 
 if(trackId != null){
     trackDetail(trackId);
@@ -14,6 +15,8 @@ if(trackId != null){
 } else if(artistId != null){
     artistDetail(artistId);
 }
+
+
 
 //Get Artist info
 function artistDetail(artistId){
@@ -26,10 +29,13 @@ function artistDetail(artistId){
 
         let artistDetail = data;
         let artistImg = document.querySelector(".artist-img");
-        artistImg.innerHTML = "<img src='" + artistDetail.picture_big + "' atl='Artista'>";
+        artistImg.innerHTML = "<img src='" +artistDetail.picture_big + "' atl='Artista'>";
 
         let artistInfo = document.querySelector(".artist-text");
-        artistInfo.innerHTML = "<h2>" + artistDetail.name + "</h2>"
+        artistInfo.innerHTML = "<h2>" + artistDetail.name + "</h2><h3>Genero: R&B Classic Rock</h3><h3>Albunes: " + artistDetail.nb_album + "</h3><p> </p>"
+
+        let socialArtist = document.querySelector(".socialartist");
+        socialArtist.innerHTML = "<a href='" + artistDetail.share + "'> <i class='fa fa-share-alt' aria-hidden='true'></i></a>  <a href='" + artistDetail.tracklist + "' target='_blank'>  <i class='far fa-list-music'></i> </a>";
 
     })
 
@@ -41,7 +47,10 @@ function artistDetail(artistId){
 
 }
 
+
 //Get Album Info
+
+
 function albumDetail(albumId){
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + albumId)
     .then(function(res){
@@ -57,7 +66,10 @@ function albumDetail(albumId){
         artistImg.innerHTML = `<img src='${artistDetail.picture_medium}' atl='Artista'>`;
 
         let artistInfo = document.querySelector(".artist-text");
-        artistInfo.innerHTML = `<h2>${artistDetail.name}</h2> <h3> Género: <a href='detail.html?generoid=${data.genre_id}'> ${data.genres.data[0].name} </a> </h3>`;
+        artistInfo.innerHTML = `<h2>${artistDetail.name}</h2><h3>Genero: <a href='detail.html?generoid=${data.genre_id}'>${data.genres.data[0].name}</a></h3><h3>Albunes: ${artistDetail.nb_album}</h3><p> </p>`;
+
+        let socialArtist = document.querySelector(".socialartist");
+        socialArtist.innerHTML = `<a href='${artistDetail.share}'> <i class='fa fa-share-alt' aria-hidden='true'></i></a>  <a href='${artistDetail.tracklist}' target='_blank'>  <i class='far fa-list-music'></i> </a>`;
 
         let tracksData = data.tracks.data;
         let albumInfo = document.querySelector(".album-name");
@@ -77,7 +89,7 @@ function albumDetail(albumId){
             </td></tr>`;
 
         }
-
+                                
         albumInfo.innerHTML += `</table></div>`;
     })
 
@@ -89,7 +101,11 @@ function albumDetail(albumId){
 
 }
 
+
+
 //Get track Info
+
+
 function trackDetail(trackId){
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/" + trackId)
     .then(function(res){
@@ -105,16 +121,26 @@ function trackDetail(trackId){
         artistImg.innerHTML = `<img src='${artistDetail.picture_medium}' atl='Artista'>`;
 
         let artistInfo = document.querySelector(".artist-text");
-        artistInfo.innerHTML = `<h2>${artistDetail.name}</h2>`;
+        artistInfo.innerHTML = `<h2>${artistDetail.name}</h2><h3>Genero: R&B Classic Rock</h3><h3>Albunes: ${artistDetail.nb_album}</h3><p> </p>`;
+
+        let socialArtist = document.querySelector(".socialartist");
+        socialArtist.innerHTML = `<a href='${artistDetail.share}'> <i class='fa fa-share-alt' aria-hidden='true'></i></a>  <a href='${artistDetail.tracklist}' target='_blank'>  <i class='far fa-list-music'></i> </a>`;
 
         let albumDetail = data.album;
         let duration = (data.duration / 60).toFixed(2);
         let albumInfo = document.querySelector(".album-name");
         albumInfo.innerHTML = `<h3><a href='detail.html?albumid=${albumDetail.id}' style='color:#337ab7!important;'>${albumDetail.title}</a></h3><h4 style='color:inherit'>Ano: ${albumDetail.release_date}<h4>`;
-        albumInfo.innerHTML += `<table><tr><th rowspan='4' width='15%'><img src='${albumDetail.cover_medium}' width='200'></th><th width='80%'>Nombre Cancion</th><th>duration</th><th></th></tr>
-                                <tr><td>${data.title}</td><td>${duration}</td><td><i class='far fa-play-circle'></i> play</td></tr></table></div>`;
-var audio = new Audio(data.preview);
-audio.play();
+        albumInfo.innerHTML += `<table><tr><th rowspan='4' width='15%'><img src='${albumDetail.cover_medium}' width='150'></th><th width='60%'>Nombre Cancion</th><th>duration</th><th></th></tr>
+                                <tr><td>${data.title}</td><td>${duration}</td>
+                                <td><audio id="${data.id}" src="${data.preview}" preload="auto"></audio>
+                                <div>
+              <button onclick="document.getElementById(${data.id}).play()"><i class='far fa-play-circle'></i></button>
+              <button onclick="document.getElementById(${data.id}).pause()"><i class="far fa-pause-circle"></i></button>
+              <button onclick="document.getElementById(${data.id}).volume+=0.1"><i class="fas fa-volume-up"></i></button>
+              <button onclick="document.getElementById(${data.id}).volume-=0.1"><i class="fas fa-volume-down"></i></button>
+            </div> 
+                                </td></tr></table></div>`;
+
     })
 
     .catch(function(error){
@@ -125,7 +151,9 @@ audio.play();
 
 }
 
+
 //Get Genero Info
+
 function generoDetail(generoId){
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + generoId)
     .then(function(res){
