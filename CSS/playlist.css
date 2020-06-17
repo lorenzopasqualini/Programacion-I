@@ -53,3 +53,21 @@ p
 {
     margin: 5px;
 }
+
+/* Versión Tablet */
+@media (max-width: 768px)
+{
+    .deezerPlaylist
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Versión Mobile */
+@media (max-width: 320px)
+{
+    .deezerPlaylist
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}

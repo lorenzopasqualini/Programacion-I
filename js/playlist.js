@@ -29,6 +29,20 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/playlist/" + p
             </div>`
     }
 
+    let allButtons = document.querySelectorAll(".button");
+    for (const oneButton of allButtons) {
+        oneButton.onclick = function() {
+            alert("Este Track fue agregado a MyPlaylist.")
+            let stringPlaylist = window.localStorage.getItem("addPlaylist");
+            let jsonPlaylist = JSON.parse(stringPlaylist);
+            if (!jsonPlaylist) {
+                jsonPlaylist = [];
+            }
+            jsonPlaylist.push(data);
+            window.localStorage.setItem("addPlaylist", JSON.stringify(jsonPlaylist));
+        }
+    }
+
 })
 
 .catch(function(error){

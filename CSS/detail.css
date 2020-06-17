@@ -6,7 +6,7 @@ body
     background-size: cover;
     background-position: center;
     font-family: 'Raleway', sans-serif;
-} 
+}
 
 .artist-description {
 	background-color: blue;
@@ -21,32 +21,6 @@ body
 	border-radius:100%; width:200px;
 }
 
-.socialartist {
-	font-size: 1.2em;
-}
-.socialartist i {
-	margin: 10px 5px;
-}
-.fa-twitter {
-	color:#00acee;
-}
-.fa-facebook {
-	color:#3b5998;
-}
-.instagram {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  border-radius: 1px;
-  color: #fff;
-  font-size: 1.2em;
-  line-height: 20px;
-  vertical-align: middle;
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-}
 .grid-container {
 	display: grid;
 }
@@ -61,6 +35,7 @@ border-radius: 7px 7px 7px 7px;
 -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+display: flex;
 }
 
 .album {
@@ -80,21 +55,15 @@ border-radius: 100%;
 width: 100%;
 }
 
-.artist-info {
-border-radius: 10px;
-background-color: #ffffff;
-}
-
 .artist-text {
 width: 327px;
 height: 208px;
 }
 
 .artist-text h2 {
-margin: 0 0 0 38px;
+margin: 25px;
 font-size: 34px;
-color: #474747;
-
+color: white;
 }
 
 .artist-text h2,
@@ -103,7 +72,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .artist-text h3 {
-margin: 0 0 0 38px;
+margin: 25px;
 font-size: 13px;
 font-family: 'Raleway', sans-serif;
 font-weight: 400;
@@ -123,31 +92,12 @@ font-weight: lighter;
 overflow: hidden;
 }
 
-.socialartist {
-width: 327px;
-margin: 17px 0 0 38px;
-position: relative;
-}
-
-.socialartist p {
-display: inline-block;
-position: absolute;
-top: -13px;
-height: 50px;
-font-family: 'Trocchi', serif;
-margin: 0 0 0 38px;
-font-size: 28px;
-font-weight: lighter;
-color: #474747;
-}
-
 span {
 display: inline-block;
 height: 50px;
 font-family: 'Suranna', serif;
 font-size: 34px;
 }
-
 
 .album-1, .album-2, .album-3 {
 background-color: #ffffff;
