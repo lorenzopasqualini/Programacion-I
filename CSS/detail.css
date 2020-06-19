@@ -8,30 +8,22 @@ body
     font-family: 'Raleway', sans-serif;
 }
 
-.artist-description {
-	background-color: blue;
-	border-radius: 10px;
-}
 .picture-artist {
-	padding: 20px; /* Todos tendran el mismo valor */
-	/*margin: 20px 20px; */ /* El primero para arriba y abajo, el segundo para derecha e izquierda */
-	/*margin: 20px 20px 20px 20px; */	 /* El primero arriba, segundo derecha, tercero abajo y quarto izquierda */
+	padding: 20px;
 }
 .picture-artist img {
-	border-radius:100%; width:200px;
+  border-radius:100%;
+  width:200px;
 }
 
 .grid-container {
 	display: grid;
 }
 
-/*  NUEVO  */
 .wrapper {
 height: 225px;
-/*margin: 50px auto;*/
 margin: 120px 100px 10px 100px;
 border-radius: 7px 7px 7px 7px;
-/* VIA CSS MATIC https://goo.gl/cIbnS */
 -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -39,7 +31,7 @@ display: flex;
 }
 
 .album {
-  margin: 120px 100px 10px 100px;
+  margin: 10px 100px 10px 100px;
 }
 
 .artist-img {
@@ -69,6 +61,7 @@ color: white;
 .artist-text h2,
 .artist-price-btn p {
 font-family: 'Raleway', sans-serif;
+text-align: left;
 }
 
 .artist-text h3 {
@@ -79,6 +72,7 @@ font-weight: 400;
 text-transform: uppercase;
 color: #d2d2d2;
 letter-spacing: 0.2em;
+text-align: left;
 }
 
 .artist-text p {
@@ -103,8 +97,6 @@ font-size: 34px;
 background-color: #ffffff;
 padding: 10px;
 border-radius: 10px;
-margin-top: 20px;
-margin-bottom: 5px;
 }
 
 .album-name {
@@ -119,7 +111,6 @@ text-transform: uppercase;
 letter-spacing: 0.2em;
 }
 
-
 table {
 border-collapse: collapse;
 border-spacing: 0;
@@ -133,3 +124,17 @@ padding: 8px;
 }
 
 tr:nth-child(even){background-color: #f2f2f2}
+
+.title-img
+{
+  display: flex;
+}
+
+/* Versión Tablet */
+@media (max-width: 768px)
+{
+  #playButton
+  {
+    display: flex;
+  }
+}
