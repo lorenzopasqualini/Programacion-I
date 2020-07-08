@@ -25,11 +25,12 @@ header ul{
 }
 
 header ul li{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 header ul li:hover{
-    font-size: 14px;
+    font-size: 12px;
+    transition-duration: 1s;
 }
 
 #LS-logo{
@@ -39,7 +40,8 @@ header ul li:hover{
 }
 
 #LS-logo:hover{
-    transform: rotate(10deg);
+    transform: rotate(360deg);
+    transition-duration: 4s;
 }
 
 a{
@@ -95,12 +97,7 @@ footer{
     justify-content: space-evenly;
     color: white;
     align-items: center;
-    font-size: 15px;
-}
-
-#deezer-logo{
-    width: 100px;
-    height: 20px;
+    font-size: 12px;
 }
 
 a{
