@@ -1,5 +1,4 @@
-body
-{
+body{
     background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,19 +7,19 @@ body
     font-family: 'Raleway', sans-serif;
 }
 
-.picture-artist {
+.picture-artist{
 	padding: 20px;
 }
-.picture-artist img {
+.picture-artist img{
   border-radius:100%;
   width:200px;
 }
 
-.grid-container {
+.grid-container{
 	display: grid;
 }
 
-.wrapper {
+.wrapper{
 height: 225px;
 margin: 120px 100px 10px 100px;
 border-radius: 7px 7px 7px 7px;
@@ -30,11 +29,11 @@ box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 display: flex;
 }
 
-.album {
+.album{
   margin: 10px 100px 10px 100px;
 }
 
-.artist-img {
+.artist-img{
 float: left;
 height: 225px;
 width: 220px;
@@ -42,29 +41,28 @@ border-radius: 10px 0 0 10px;
 padding: 10px;
 }
 
-.artist-img img {
+.artist-img img{
 border-radius: 100%;
 width: 100%;
 }
 
-.artist-text {
+.artist-text{
 width: 327px;
 height: 208px;
 }
 
-.artist-text h2 {
+.artist-text h2{
 margin: 25px;
 font-size: 34px;
 color: white;
 }
 
-.artist-text h2,
-.artist-price-btn p {
+.artist-text h2, .artist-price-btn p{
 font-family: 'Raleway', sans-serif;
 text-align: left;
 }
 
-.artist-text h3 {
+.artist-text h3{
 margin: 25px;
 font-size: 13px;
 font-family: 'Raleway', sans-serif;
@@ -75,7 +73,7 @@ letter-spacing: 0.2em;
 text-align: left;
 }
 
-.artist-text p {
+.artist-text p{
 height: 115px;
 margin: 0 0 0 38px;
 font-family: 'Raleway', sans-serif;
@@ -86,24 +84,24 @@ font-weight: lighter;
 overflow: hidden;
 }
 
-span {
+span{
 display: inline-block;
 height: 50px;
 font-family: 'Suranna', serif;
 font-size: 34px;
 }
 
-.album-1, .album-2, .album-3 {
+.album-1, .album-2, .album-3{
 background-color: #ffffff;
 padding: 10px;
 border-radius: 10px;
 }
 
-.album-name {
+.album-name{
 margin-left: 50px;
 }
 
-.album-name h4 {
+.album-name h4{
 font-size: 13px;
 font-family: 'Raleway', sans-serif;
 font-weight: 400;
@@ -111,30 +109,29 @@ text-transform: uppercase;
 letter-spacing: 0.2em;
 }
 
-table {
+table{
 border-collapse: collapse;
 border-spacing: 0;
 width: 100%;
 border: none;
 }
 
-th, td {
+th, td{
 text-align: left;
 padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even){
+  background-color: #f2f2f2
+}
 
-.title-img
-{
+.title-img{
   display: flex;
 }
 
 /* Versión Tablet */
-@media (max-width: 768px)
-{
-  #playButton
-  {
+@media (max-width: 768px){
+  #playButton{
     display: flex;
   }
 }

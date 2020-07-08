@@ -1,5 +1,4 @@
-body
-{
+body{
     background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,12 +7,11 @@ body
     font-family: 'Raleway', sans-serif;
 }
 
-.contPlaylist {
+.contPlaylist{
     margin: 120px 100px 10px 100px;
 }
 
-.myPlaylistTrack
-{
+.myPlaylistTrack{
     background-image: url(../img/fondo2.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -29,14 +27,12 @@ body
     margin: 10px;
 }
 
-.deezerPlaylist
-{
+.deezerPlaylist{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.eachPlaylist
-{
+.eachPlaylist{
     background-color: rgba(160, 160, 255, 0.4);
     display: flex;
     align-items: center;
@@ -49,30 +45,24 @@ body
     margin: 10px;
 }
 
-#myPlaylist-img
-{
+#myPlaylist-img{
     border-radius: 100px;
 }
 
-p
-{
+p{
     margin: 5px;
 }
 
 /* Versión Tablet */
-@media (max-width: 768px)
-{
-    .deezerPlaylist
-    {
+@media (max-width: 768px){
+    .deezerPlaylist{
         grid-template-columns: 1fr 1fr;
     }
 }
 
 /* Versión Mobile */
-@media (max-width: 320px)
-{
-    .deezerPlaylist
-    {
+@media (max-width: 320px){
+    .deezerPlaylist{
         grid-template-columns: 1fr 1fr;
     }
 }

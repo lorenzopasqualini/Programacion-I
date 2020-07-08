@@ -1,5 +1,4 @@
-body
-{
+body{
     background-image: url(../img/fondo.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -8,8 +7,7 @@ body
     font-family: 'Raleway', sans-serif;
 }
 
-header ul
-{
+header ul{
     background-color: rgba(0, 0, 0, 0.2);
     padding: 25px;
     position: fixed;
@@ -26,30 +24,40 @@ header ul
     z-index: 1;
 }
 
-header ul li {
-    font-size: 16px;
+header ul li{
+    font-size: 15px;
 }
 
-a
-{
+header ul li:hover{
+    font-size: 14px;
+}
+
+#LS-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#LS-logo:hover{
+    transform: rotate(10deg);
+}
+
+a{
     color: white !important;
     font-weight: bold;
     text-decoration: none !important;
 }
 
-.forms
-{
+.forms{
     display: flex;
 }
 
-.form-space
-{
+.form-space{
     border-radius: 50px;
     padding: 5px;
 }
 
-.form-button
-{
+.form-button{
     background-color: rgb(160, 160, 255, 0.6);
     border-radius: 25px;
     font-weight: lighter;
@@ -57,15 +65,13 @@ a
     color: white;
 }
 
-.search
-{
+.search{
     margin: 120px 100px 10px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.results
-{
+.results{
     background-color: rgba(160, 255, 168, 0.4);
     display: flex;
     align-items: center;
@@ -77,13 +83,11 @@ a
     margin: 5px;
 }
 
-#artist-img
-{
+#artist-img{
     border-radius: 100px;
 }
 
-footer
-{
+footer{
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     border-radius: 25px;
@@ -94,14 +98,12 @@ footer
     font-size: 15px;
 }
 
-#deezer-logo
-{
+#deezer-logo{
     width: 100px;
     height: 20px;
 }
 
-a
-{
+a{
     align-content: center;
     justify-content: center;
     text-align: center;
