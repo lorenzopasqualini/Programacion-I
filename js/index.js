@@ -73,7 +73,7 @@ console.log(data)
     for (const onePlaylist of allPlaylists) {
         contadorPlaylist++;
         contPlaylists.innerHTML +=
-            `<div>
+            `<div class="playlist-img">
                 <a href= "playlist.html?id=${onePlaylist.id}">
                     <div>
                         <img src="${onePlaylist.picture_big}" alt="Deezer Playlist">
