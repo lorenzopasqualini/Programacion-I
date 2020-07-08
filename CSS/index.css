@@ -22,6 +22,7 @@ body{
 
 .artists{
     background-color: rgba(160, 255, 168, 0.6);
+    border-radius: 25px;
 }
 
 .carousel-inner img{
@@ -44,6 +45,8 @@ body{
 .albums img, .tracks img{
     width: 300px;
     height: 300px;
+    display: block;
+    margin: auto;
 }
 
 .tracks{
@@ -62,15 +65,21 @@ body{
 
 #playlists{
     background-color: rgba(255, 253, 160, 0.6);
+    border-radius: 25px;
 }
 
 .myPlaylistIndex{
     background-color: rgba(255, 253, 160, 0.2);
     background-size: cover;
     border-radius: 50px;
-    padding: 50px;
+    padding: 25px;
     margin: 25px;
     text-align: center;
+}
+
+.myPlaylistIndex:hover{
+    padding: 50px;
+    transition-duration: 1s;
 }
 
 .playlist-img img{
@@ -80,12 +89,18 @@ body{
 
 #genres{
     background-color: rgba(238, 144, 188, 0.6);
+    border-radius: 25px;
 }
 
 .genre-item{
     border-radius: 50px;
     padding: 50px;
     margin: 25px;
+    opacity: 0.8;
+}
+
+.genre-item:hover{
+    opacity: 1;
 }
 
 #genre-rap{
