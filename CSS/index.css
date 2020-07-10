@@ -147,6 +147,12 @@ h1, h2, h3, h4, h5{
 
 .form-space{
     border-radius: 25px;
+    width: 100px;
+}
+
+.form-space:hover{
+    width: 200px;
+    transition-duration: 1s;
 }
 
 .form-button{
@@ -180,7 +186,7 @@ header ul li{
 
 header ul li a:hover{
     font-size: 12px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 footer{

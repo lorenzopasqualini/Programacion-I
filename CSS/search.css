@@ -30,7 +30,7 @@ header ul li{
 
 header ul li:hover{
     font-size: 12px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 #LS-logo{
@@ -55,8 +55,14 @@ a{
 }
 
 .form-space{
-    border-radius: 50px;
-    padding: 5px;
+    border-radius: 25px;
+    padding: 3px;
+    width: 100px;
+}
+
+.form-space:hover{
+    width: 200px;
+    transition-duration: 1s;
 }
 
 .form-button{
